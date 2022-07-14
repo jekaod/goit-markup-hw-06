@@ -447,11 +447,11 @@
             </li>
           </ul>
         </div>
-        <div class="footer-item footer-social">
+        <div class="footer-item">
           <h2 class="footer-title">Подпишитесь на рассылку</h2>
           <form class="footer-form">
             <input class="mail-input" type="email" name="mail" id="mail" placeholder="E-mail" />
-            <button class="footer-btn" type="submit">
+            <button class="order" type="submit">
               Подписаться
               <svg class="footer-icon" width="24" height="24">
                 <use href="./imeges/icon.svg#icon-send"></use>
@@ -474,25 +474,34 @@
           <ul class="modal-list list">
             <li class="form-item">
               <label class="form-label" for="name-client">Имя</label>
-              <input class="form-input" type="text" name="name-client" />
-              <svg class="form-icon" width="12" height="12">
-                <use href="./imeges/icon.svg#icon-user"></use>
-              </svg>
+              <div class="form-wrapper">
+                <input class="form-input" type="text" name="name-client" id="name-client" />
+                <svg class="form-icon" width="12" height="12">
+                  <use href="./imeges/icon.svg#icon-user"></use>
+                </svg>
+              </div>
             </li>
+
             <li class="form-item">
               <label class="form-label" for="tel-client">Телефон</label>
-              <input class="form-input" type="tel" name="tel-client" id="tel-client" />
-              <svg class="form-icon" width="12" height="12">
-                <use href="./imeges/icon.svg#icon-tel"></use>
-              </svg>
+              <div class="form-wrapper">
+                <input class="form-input" type="tel" name="tel-client" id="tel-client" />
+                <svg class="form-icon" width="12" height="12">
+                  <use href="./imeges/icon.svg#icon-tel"></use>
+                </svg>
+              </div>
             </li>
+
             <li class="form-item">
-              <label class="form-label" for="">Почта</label>
-              <input class="form-input" type="email" name="email-client" id="tel-client" />
-              <svg class="form-icon" width="12" height="12">
-                <use href="./imeges/icon.svg#icon-email"></use>
-              </svg>
+              <label class="form-label" for="email-client">Почта</label>
+              <div class="form-wrapper">
+                <input class="form-input" type="email" name="email-client" id="email-client" />
+                <svg class="form-icon" width="12" height="12">
+                  <use href="./imeges/icon.svg#icon-email"></use>
+                </svg>
+              </div>
             </li>
+
             <li class="form-item">
               <label class="form-label" for="comment">Коментарий</label>
               <textarea
@@ -511,13 +520,13 @@
               width="16"
               height="15"
             >
-              <use href="./imeges/icon.svg#icon-square"></use>
+              <use href="./imeges/icon.svg#icon-check"></use>
             </svg>
-            Соглашаюсь с рассылкой и принимаю
+            Соглашаюсь с рассылкой и принимаю&nbsp;
             <a class="checkbox-link" href="">Условия договора</a>
           </label>
 
-          <button class="modal-btn" type="submit">Отправить</button>
+          <button class="order" type="submit">Отправить</button>
         </form>
       </div>
     </div>
